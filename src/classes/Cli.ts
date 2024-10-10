@@ -287,10 +287,10 @@ class Cli {
         },
       ])
       .then((answers) => {
-        if (answers.vehicleToTow.value === truck) {
+        if (answers.vehicleToTow === truck) {
           console.log("The truck cannot tow itself!");
         } else {
-          truck.tow(answers.vehicleToTow.value);
+          truck.tow(answers.vehicleToTow);
         }
         this.performActions();
       });
